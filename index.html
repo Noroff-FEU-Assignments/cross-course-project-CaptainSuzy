@@ -11,20 +11,43 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <a href="index.html"> GameHub</a>
-      <nav>
-        <a href="https://vg.no">Game Hub</a>
-        <a href="new-and-noteworthy.html">New and noteworthy</a>
-        <a href="categories.html">Categories</a>
-        <a href="outlet.html">Outlet</a>
-        <a href="login.html">Log in</a>
-      </nav>
+    <header class="width">
+      <section>
+        <a href="index.html">
+          <img
+            src="images/GameHub_Logo.png"
+            alt="GameHub logo"
+            class="header-logo"
+          />
+        </a>
+      </section>
+      <div class="nav-header-flex">
+        <img
+          src="images/magnifying-glass-png-banner-library-library-magnifying-glass-icon-white-290x481.png"
+          class="header-icon"
+        />
+        <img
+          src="images/Shopping Cart White Logo Icon Transparent PNG - 512x512.png"
+          class="header-icon"
+        />
+        <section class="nav-bar header-icon">
+          <input type="checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox">
+            <img
+              src="images/hamburger manu.png"
+              class="hamburger-menu"
+              alt="Hamburger navigation bar"
+            />
+          </label>
+          <nav class="burger-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </section>
+      </div>
     </header>
-    <main>
-      <h1>WINTER SALE</h1>
-      <h2>Up to 90%</h2>
-
+    <main class="width-70">
       <div class="container">
         <img
           src="images/space winter sale.png"
@@ -34,14 +57,6 @@
         <div class="bottom-left">WINTER SALE</div>
         <div class="bottom-right">UP TO 90%</div>
       </div>
-
-      <hr />
-
-      <a href="categories.html">Browse categories</a>
-      <a href="#">Search</a>
-
-      <hr />
-
       <section>
         <h2>Browse categories</h2>
 
@@ -66,12 +81,23 @@
           <img src="images/racing.jpeg" alt="Picture of Racing Playbox game" />
         </div>
       </section>
-
-      <nav>
+    </main>
+    <div class="width-70">
+      <nav class="nav-flex">
         <a href="about.html">About</a>
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
       </nav>
-    </main>
+    </div>
+    <footer>
+      <div class="nav-flex width-30">
+        <img src="images/Twitter-X-White-Logo-PNG.png" class="some-icon" />
+        <img
+          src="images/instagram-icon-instagram-logo-instagram-instagram-icon-white-306x304.png"
+          class="some-icon"
+        />
+        <img src="images/facebook-logo-white-501x425.png" class="some-icon" />
+      </div>
+    </footer>
   </body>
 </html>

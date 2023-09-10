@@ -4,13 +4,37 @@ html {
     color: rgb(255, 255, 255);
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+nav,
+  #menu-checkbox {
+    display: none;
 }
 
-main {
+#menu-checkbox:checked ~ nav {
+  display: block;
+}
+
+header {
+  position: relative;
+  margin-bottom: 11em;
+}
+
+.burger-nav {
+  background: rgb(18, 35, 51);
+}
+
+.burger-nav a {
+  display: block;
+  color: rgb(122, 162, 255);
+  padding: 10px 20px;
+}
+
+@media(min-width: 600px) {
+  nav {
+    display: block;
+  }
+}
+
+.width-70 {
     width: 70%;
     margin: 0 auto;
 }
@@ -20,11 +44,11 @@ a {
     text-decoration: none;
 }
 
-nav > a {
+.burger-nav > a {
     padding: 2% 3%;
 }
 
-nav > a:hover {
+.burger-nav > a:hover {
     background-color: rgb(18, 35, 51);
     color: rgb(122, 162, 255);
 }
@@ -59,3 +83,104 @@ nav > a:hover {
     bottom: 8px;
     right: 16px;
   }
+
+  .header-logo{
+    width: 127px;
+    height: 79.856px;
+    display: absolute;
+    float: left;
+    color: white;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4em 0;
+}
+
+.nav-header-flex {
+  display: flex;
+  justify-content: end;
+}
+
+.width-30 {
+  width: 30%;
+    margin: 0 auto;
+}
+
+.some-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.header-icon {
+  padding: 3em 3em;
+  width: 32px;
+  height: 32px;
+}
+
+.border {
+  border: 3px solid white;
+  border-radius: 30px;
+}
+
+.width-400 {
+  width: 400px;
+  height: 400px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+div.align-normal {
+  align-items: normal;
+}
+
+.hero-image-button {
+  background-image: url(images/Cyber\ mini.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero-text-button {
+  font-size: 4em;
+  margin: 0 auto;
+}
+
+.flex-vertical {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-gamepage-image-button {
+  background-image: url(images/Forge\ legend\ mini.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-gamepage-text-button {
+  font-size: 2em;
+  margin: 0 auto;
+}
+
+.border-gamepage {
+  border: 3px solid white;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.line {
+  border-bottom: 1px solid white;
+}
