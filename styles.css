@@ -152,12 +152,17 @@ div.align-normal {
   margin-bottom: 3em;
 }
 
+.flex-vertical {
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-text-button {
   font-size: 4em;
   margin: 0 auto;
 }
 
-.flex-vertical {
+.flex-horizontal {
   flex-direction: column;
   justify-content: center;
 }
