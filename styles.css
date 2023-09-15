@@ -95,10 +95,20 @@ a {
   justify-content: space-between;
   margin: 4em 0;
 }
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
 
 .nav-header-flex {
   display: flex;
   justify-content: end;
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 .width-30 {
@@ -162,6 +172,13 @@ div.align-normal {
   justify-content: space-around;
   margin-bottom: 3em;
 }
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
 
 .flex-vertical {
   flex-direction: column;
@@ -194,9 +211,15 @@ justify-content: center;
 .hero-gamepage-text-button {
   width: 400px;
   height: 100px;
+  max-width: 70%;
   align-items: center;
   justify-content: center;
   display: flex;
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 .border-gamepage {
@@ -218,6 +241,12 @@ justify-content: center;
   justify-content: center;
   display: flex;
 }
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
 .button-white {
   background-color: white;
   color: black;
