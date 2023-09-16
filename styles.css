@@ -96,7 +96,7 @@ a {
   margin: 4em 0;
 }
 @media (max-width: 600px) {
-  .container {
+  .nav-flex {
     flex-direction: column;
   }
 }
@@ -106,7 +106,7 @@ a {
   justify-content: end;
 }
 @media (max-width: 600px) {
-  .container {
+  .nav-header-flex {
     flex-direction: column;
   }
 }
@@ -156,6 +156,7 @@ div.align-normal {
   background-image: url(images/Cyber\ mini.png);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 70%
 }
 
 .hero-image-button-checkout {
@@ -165,6 +166,7 @@ div.align-normal {
   min-width: 30px;
   min-height: 30px;
   margin: 2em;
+  max-width: 70%
 }
 
 .hero-flex {
@@ -173,7 +175,7 @@ div.align-normal {
   margin-bottom: 3em;
 }
 @media (max-width: 600px) {
-  .container {
+  .hero-flex {
     flex-direction: column;
   }
 }
@@ -195,6 +197,7 @@ justify-content: center;
 .hero-text-button {
   font-size: 2em;
   margin: 0 auto;
+  max-width: 70%
 }
 
 .flex-horizontal {
@@ -206,6 +209,7 @@ justify-content: center;
   background-image: url(images/Forge\ legend\ mini.png);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 70%
 }
 
 .hero-gamepage-text-button {
@@ -217,7 +221,7 @@ justify-content: center;
   display: flex;
 }
 @media (max-width: 600px) {
-  .container {
+  .hero-gamepage-text-button {
     flex-direction: column;
   }
 }
@@ -240,9 +244,10 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   display: flex;
+  max-width: 70%
 }
 @media (max-width: 600px) {
-  .container {
+  .button-small {
     flex-direction: column;
   }
 }
@@ -250,20 +255,30 @@ justify-content: center;
 .button-white {
   background-color: white;
   color: black;
+  max-width: 70%
 }
 
 .button-large {
   width: 930px;
   height: 700px;
+  max-width: 70%
 }
 
 .grid-payment {
+  /* grid-template-columns: 1fr; */
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .grid-payment {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
         "head -"
         "main main2"
         "footer footer";
+}
 }
 
 .grid-payment > * {
@@ -275,8 +290,15 @@ input {
   background-color: black;
   color: white;
   width: 300px;
+  max-width: 70%;
   height: 50px;
   border-radius: 26px;
+}
+
+@media (max-width: 600px) {
+  input {
+    min-width: 100%;
+  }
 }
 
 .message-box {
