@@ -105,11 +105,6 @@ a {
   display: flex;
   justify-content: end;
 }
-@media (max-width: 600px) {
-  .nav-header-flex {
-    flex-direction: column;
-  }
-}
 
 .width-30 {
   width: 30%;
@@ -306,3 +301,9 @@ input {
   height: 500px;
 }
 
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    flex-direction: column;
+}
+}
