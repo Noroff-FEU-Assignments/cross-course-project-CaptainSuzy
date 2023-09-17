@@ -95,11 +95,6 @@ a {
   justify-content: space-between;
   margin: 4em 0;
 }
-@media (max-width: 600px) {
-  .nav-flex {
-    flex-direction: column;
-  }
-}
 
 .nav-header-flex {
   display: flex;
