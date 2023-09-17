@@ -82,7 +82,12 @@ a {
     position: absolute;
     bottom: 8px;
     left: 16px;
-    font-size: 3em;
+  }
+
+  @media (min-width: 600px) {
+    .bottom-left {
+      font-size: 3em;
+    }
   }
   
   /* Bottom right text */
@@ -90,7 +95,12 @@ a {
     position: absolute;
     bottom: 8px;
     right: 16px;
-    font-size: 3em;
+  }
+
+  @media (min-width: 600px) {
+    .bottom-right {
+      font-size: 3em;
+    }
   }
 
   .header-logo{
