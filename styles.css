@@ -26,6 +26,7 @@ header {
 
 .burger-nav {
   background: rgb(18, 35, 51);
+  font-size: 1.25em;
 }
 
 .burger-nav a {
@@ -285,7 +286,6 @@ justify-content: center;
 }
 
 .grid-payment {
-  /* grid-template-columns: 1fr; */
   display: flex;
   flex-direction: column;
 }
