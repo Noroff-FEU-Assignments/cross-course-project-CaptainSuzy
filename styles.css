@@ -46,7 +46,7 @@ a {
 }
 
 .burger-nav > a {
-    padding: 2% 3%;
+    padding: 2%, 3%;
 }
 
 .burger-nav > a:hover {
@@ -123,7 +123,7 @@ a {
 
 .nav-header-flex {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .width-30 {
@@ -346,13 +346,14 @@ input {
   }
 }
 
-@media (max-width: 600px) {
-  header {
-    display: flex;
-    flex-direction: column;
-}
+@media (min-width: 768px) {
+  .desktop-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 img {
   max-width: 100%;
 }
+
